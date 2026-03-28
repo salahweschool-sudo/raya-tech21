@@ -1,0 +1,202 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-bg: #121212;
+    --dark-card: #1e1e1e;
+    --light-bg: #f8f9fa;
+    --text-color: #212529;
+    --text-light: #6c757d;
+    --transition: all 0.3s ease;
+}
+
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+    transition: var(--transition);
+    overflow-x: hidden;
+}
+
+/* ================= DARK MODE ================= */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: var(--dark-card) !important;
+}
+
+.dark-mode .card {
+    background-color: var(--dark-card);
+    border-color: #333;
+    color: #fff;
+}
+
+.dark-mode .text-muted {
+    color: #aaa !important;
+}
+
+.dark-mode .bg-light {
+    background-color: #1a1a1a !important;
+}
+
+.dark-mode footer {
+    background-color: #000;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(
+        135deg,
+        rgba(13, 110, 253, 0.1),
+        rgba(13, 110, 253, 0.05)
+    );
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ================= CAROUSEL ================= */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ================= SECTIONS ================= */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* ================= CARDS ================= */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* ================= BACK TO TOP ================= */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    transition: var(--transition);
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+/* ================= DARK MODE BUTTON ================= */
+#themeToggle {
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
