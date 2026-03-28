@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="Contact Raya Tech for professional software and web solutions.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Raya Tech</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Raya Tech</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+
+                <!-- Dark Mode -->
+                <li class="nav-item ms-3">
+                    <button class="btn btn-outline-dark" id="themeToggle">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-primary text-white py-5 text-center">
+    <div class="container">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p class="lead">Have a project in mind? Let's talk.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Info -->
+            <div class="col-lg-5 mb-5">
+                <h2 class="mb-4">Get in Touch</h2>
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-geo-alt-fill fs-3 text-primary"></i>
+                    <div class="ms-3">
+                        <h5>Location</h5>
+                        <p class="text-muted">Cairo, Egypt</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-envelope-fill fs-3 text-primary"></i>
+                    <div class="ms-3">
+                        <h5>Email</h5>
+                        <p class="text-muted">info@rayatech.com</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-telephone-fill fs-3 text-primary"></i>
+                    <div class="ms-3">
+                        <h5>Phone</h5>
+                        <p class="text-muted">+20 1234 567 89</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-lg-7">
+                <div class="card p-4 shadow-sm border-0">
+
+                    <form id="contactForm" class="needs-validation" novalidate>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" required minlength="2">
+                                <div class="invalid-feedback">Enter valid name</div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                                <div class="invalid-feedback">Enter valid email</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" required>
+                            <div class="invalid-feedback">Enter subject</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" required minlength="10"></textarea>
+                            <div class="invalid-feedback">Minimum 10 characters</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Map -->
+   <section class="section-padding py-0">
+        <div class="container-fluid px-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.628297764522!2d-122.0837468!3d37.4219999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sGoogleplex!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h4>Raya Tech</h4>
+        <p>&copy; 2026 All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
